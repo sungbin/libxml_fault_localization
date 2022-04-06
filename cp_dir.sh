@@ -12,4 +12,4 @@ cat ../trace-pc.c >> ./xmllint.c
 
 CC='clang' CFLAGS="-g -O0 -fsanitize=address -fsanitize-coverage=trace-pc-guard" CXXFLAGS="-g -O0 -fsanitize=address" ./configure --prefix=$(pwd)/
 make -j10
-./xmllint --maxmem 5 ../input_xmllint_poc_2
+./xmllint --maxmem 5 ../target.crash
